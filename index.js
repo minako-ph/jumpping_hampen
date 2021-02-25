@@ -86,12 +86,17 @@ function gameLoop(timestamp){
     //ゲーム状態がfalseだったらゲームをストップ
     if(!gamestate) {
         ctx.fillText("うわああああああああ",70,250);  //スコアの更新
+        startBtn.classList.remove("is-disable");
         return;
      }
     requestAnimationFrame(gameLoop);
 }
 
-document.getElementById("gameStart").onclick = function() {
+const startBtn = document.getElementById("gameStart");
+
+startBtn.onclick = function() {
+    startBtn.classList.add("is-disable");
+
     gamestate = true; //もしfalseならゲーム描写が止まるようにする
     score = 0;
     fork = [];

@@ -23,11 +23,23 @@ p {
   font-weight: bold; }
 .jumpingHampen__desc {
   margin-top: 16px; }
-.jumpingHampen__note {
-  font-size: 10px;
-  margin-top: 8px; }
 .jumpingHampen__btn {
-  margin-top: 16px; }
+  margin-top: 16px;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #00BCD4;
+  background: #ECECEC;
+  transition: .4s; }
+  .jumpingHampen__btn:hover {
+    background: #00bcd4;
+    color: white;
+    cursor: hand; }
+  .jumpingHampen__btn.is-disable {
+    pointer-events: none;
+    color: grey; }
 .jumpingHampen__itemImage {
   display: none; }
 
