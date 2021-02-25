@@ -1,5 +1,5 @@
-export class Hampen{
-    constructor(gameWidth,gameHeight){
+export class Hampen {
+    constructor(gameWidth,gameHeight) {
         this.gameWidth = gameWidth;
         this.gameHeight = gameHeight;
         this.image = document.getElementById("img_hampen");
@@ -16,29 +16,25 @@ export class Hampen{
         this.lift = -12;
         this.jumpFlag = true;
     }
-    up(){
-        if(this.jumpFlag){
+    up() {
+        if(this.jumpFlag) {
             
             this.speed = this.lift;
             this.jumpFlag = false;
         }
        
     }
-    update(detlaTime){
-       
-        
+    update(detlaTime) {
         this.position.y += this.speed;
         this.speed += this.gravity;
 
-        /*もしはんぺんの位置が初期位置（this.gameHeight-this.offset-this.height）より大きい場合、
-        位置を初期位置にする*/
         if(this.position.y >= this.gameHeight-this.offset-this.height){
             this.position.y = this.gameHeight-this.offset-this.height;
             this.speed = 0;
             this.jumpFlag = true;
         }
     }
-    draw(ctx){
+    draw(ctx) {
         ctx.drawImage(this.image,this.position.x,this.position.y,this.width,this.height);
 
     }
