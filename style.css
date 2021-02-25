@@ -23,6 +23,9 @@ p {
   font-weight: bold; }
 .jumpingHampen__desc {
   margin-top: 16px; }
+.jumpingHampen__note {
+  margin-top: 6px;
+  font-size: 12px; }
 .jumpingHampen__btn {
   margin-top: 16px;
   position: relative;
