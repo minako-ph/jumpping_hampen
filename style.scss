@@ -1,0 +1,54 @@
+// リセット
+p {
+  margin: initial;
+}
+
+// スタイル
+.jumpingHampen {
+  &__wrapper {
+    display: flex;
+  }
+
+  &__gameScreen {
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding: 16px;
+  }
+
+  &__contents {
+    text-align: center;
+    width: 250px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding: 32px 16px;
+    margin-right: 16px;
+    flex: none;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__scoreText {
+    margin-top: 16px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  &__desc {
+    margin-top: 16px;
+  }
+
+  &__note {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+
+  &__btn {
+    margin-top: 16px;
+  }
+
+  &__itemImage {
+    display: none;
+  }
+}

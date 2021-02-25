@@ -1,0 +1,34 @@
+p {
+  margin: initial; }
+
+.jumpingHampen__wrapper {
+  display: flex; }
+.jumpingHampen__gameScreen {
+  border: 2px solid gray;
+  border-radius: 8px;
+  padding: 16px; }
+.jumpingHampen__contents {
+  text-align: center;
+  width: 250px;
+  border: 2px solid gray;
+  border-radius: 8px;
+  padding: 32px 16px;
+  margin-right: 16px;
+  flex: none; }
+.jumpingHampen__title {
+  font-weight: bold; }
+.jumpingHampen__scoreText {
+  margin-top: 16px;
+  font-size: 40px;
+  font-weight: bold; }
+.jumpingHampen__desc {
+  margin-top: 16px; }
+.jumpingHampen__note {
+  font-size: 10px;
+  margin-top: 8px; }
+.jumpingHampen__btn {
+  margin-top: 16px; }
+.jumpingHampen__itemImage {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */

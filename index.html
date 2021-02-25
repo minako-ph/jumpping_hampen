@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Jumping Hampen</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="jumpingHampen__wrapper">
+            <div class="jumpingHampen__contents">
+                <p class="jumpingHampen__title">🦆 はんぺんを救うゲーム 🦆</p>
+                <p id="scoreText" class="jumpingHampen__scoreText">スコア：0</p>
+                <p class="jumpingHampen__desc">「↑」キーでジャンプするよ</p>
+                <p class="jumpingHampen__note">スペースキーを押すとバグるから押さないでね><</p>
+                <button type="button" id="gameStart" class="jumpingHampen__btn">ゲームスタート</button>
+            </div>
+            <canvas id="gameScreen" class="jumpingHampen__gameScreen" width="800" height="500"></canvas>
+        </div>
+        <!-- 画像 -->
+        <img id="img_hampen" src="hampen.png" class="jumpingHampen__itemImage">
+        <img id="img_back" src="back.jpg" class="jumpingHampen__itemImage">
+        <img id="img_fork" src="fork.png" class="jumpingHampen__itemImage">
+        <!-- スクリプト -->
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
