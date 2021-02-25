@@ -59,22 +59,8 @@ function gameLoop(timestamp){
         if(fork[i].checkHit(hampen.position.x,hampen.position.y,hampen.r,
             fork[i].position.x,fork[i].position.y,fork[i].r)){
 
-//                //もし衝突したらフォーククラスで読み込んだ音を出す
-//                var playfork = fork[i].audio.play();
-//                //ユーザー操作がなかった時に、DOMExceptionのエラーがおこるため
-//                if(playfork !== undefined){
-//                    playfork.then(_ =>{
-//
-//                    })
-//                    .catch(error =>{
-//                        console.log(error);
-//                    });
-//                }
-                
                 gamestate=false;
-                
-//                hampen.audio.muted = true; //はんぺんのジャンプ音をミュート
-                
+
             }
         //フォークの位置がゲーム画面外に出たらフォークの配列を削除
         if(fork[i].offScreen()){
